@@ -1,2 +1,0 @@
-# YajimaNetworksGroup
-Yajimanetworksgroup's html
