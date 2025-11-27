@@ -36,6 +36,7 @@
     font-weight: 600;
     font-size: 1.15em;
     border-bottom: 2px solid #004aad;
+    flex-wrap: wrap;
   }
   nav.global-nav a {
     color: #fff;
@@ -117,6 +118,50 @@
     color: #fff;
     transform: translateY(-3px);
   }
+  /* --- 追記：スマホ対応（レスポンシブ化） --- */
+  @media (max-width: 700px) {
+    header h1 {
+      font-size: 1.5em;
+    }
+    main {
+      max-width: 98vw;
+      margin: 20px auto;
+      padding: 0 10px;
+    }
+    nav.global-nav {
+      gap: 12px;
+      font-size: 1em;
+      flex-direction: column;
+      align-items: center;
+    }
+    nav.global-nav a {
+      padding: 12px 6px;
+    }
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+    main p {
+      font-size: 1.1em;
+    }
+    .image-wrap {
+      float: none !important;
+      width: 100% !important;
+      margin: 0 0 15px 0 !important;
+      max-width: none !important;
+      min-width: 0 !important;
+    }
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+    }
+    a.button {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
 </style>
 </head>
 <body>
@@ -134,7 +179,7 @@
   <main>
     <section id="about"><br>
       <h2>企業理念</h2>
-      <div style="float:left; width:36%; max-width:280px; min-width:160px; margin:0 20px 20px 0;">
+      <div class="image-wrap" style="float:left; width:36%; max-width:280px; min-width:160px; margin:0 20px 20px 0;">
         <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="チームでのビジネスミーティング" style="width:100%; height:auto; border-radius:8px;">
       </div>
       <p>
@@ -144,7 +189,7 @@
     </section><br><br>
     <section id="business">
       <h2>事業内容</h2>
-      <div style="float:left; width:40%; max-width:280px; min-width:160px; margin:0 20px 20px 0;">
+      <div class="image-wrap" style="float:left; width:40%; max-width:280px; min-width:160px; margin:0 20px 20px 0;">
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80" alt="テクノロジーとアイデア" style="width:100%; height:auto; border-radius:8px;">
       </div>
       <p>
