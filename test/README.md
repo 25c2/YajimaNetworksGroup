@@ -2,4 +2,4 @@
 html:
 ./test/ynwtg-test.html
 css:
-./test/ynwtg-test.css
+めんどくさいから一緒にしてますよ〜
