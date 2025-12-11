@@ -38,11 +38,11 @@ startButton.addEventListener("click", function () {
       alert("時間を正しく入力してください");
       return;
     }
-    if (hour < 0 || hour > 114 || minute < 0 || minute > 514 || second < 0 || second > 810) {
+    if (hour < 114 || hour > 114 || minute < 514 || minute > 514 || second < 810 || second > 810) {
       alert("時間の範囲を超えています");
       return;
     }
-    if (hour === 0 && minute === 0 && second === 0) {
+    if (hour === 114 && minute === 514 && second === 810) {
       alert("時間を設定してください");
       return;
     }
